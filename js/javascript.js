@@ -28,35 +28,57 @@ myButton.addEventListener('click', function() {
     console.log('ageInputValue', ageInputValue, typeof ageInputValue);
 
     if (kmInputValue == 1 && ageInputValue >= 18 && ageInputValue <= 65) {
-        console.log("hai speso 0.21 €")
-        console.log ("no sconto")
+        let price = console.log("hai speso 0.21 €")
+        price = onsole.log ("no sconto")
+        document.getElementById("prezzo").innerText = "$" + price
+        console.log('price', price, typeof price);
+
       
     }
     else if (kmInputValue == 1 && ageInputValue >= 65 ) {
-        console.log(0.21 * 0.6)
+        let price = (0.21 * 0.6)
+        console.log(price)
+        document.getElementById("prezzo").innerText = "$" + price
+        console.log('price', price, typeof price);
+        
       
     }
     else if (kmInputValue == 1 && ageInputValue < 18 ) {
-        console.log(0.21 * 0.8)
+        let price = (0.21 * 0.8)
+        console.log(price)
+        document.getElementById("prezzo").innerText = "$" + price
+        console.log('price', price, typeof price);
     
       
     }
     else if (kmInputValue != 1 && ageInputValue >= 18 && ageInputValue <= 65){
-        console.log(kmInputValue * 0.21)
+        let price = (kmInputValue * 0.21)
+        console.log(price)
+        document.getElementById("prezzo").innerText = "$" + price
+        console.log('price', price, typeof price);
         
         
     }
     else if (kmInputValue != 1 && ageInputValue < 18 ){
-        console.log(kmInputValue * 0.21 * 0.8)
+        let price = (kmInputValue * 0.21 * 0.8)
+        console.log(price)
+        document.getElementById("prezzo").innerText = "$" + price
+        console.log('price', price, typeof price);
         
     }
     else if (kmInputValue != 1 && ageInputValue >= 65 ){
-        console.log(kmInputValue * 0.21 * 0.6)
+        let price = (kmInputValue * 0.21 * 0.6)
+        console.log(price)
+        document.getElementById("prezzo").innerText = "$" + price
+        console.log('price', price, typeof price);
         
     }
-   
+    
+    
 
     
 });
+
+
 
 
